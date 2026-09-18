@@ -1,5 +1,10 @@
 # CLI reference (`scripts/image_gen.py`)
 
+> Installed from `dsh-imagegen-skill`? `scripts/image_gen.py` sits next to this
+> file inside the package, and the skill's base directory is reported in
+> `<skill_resources>`. The `CODEX_HOME` layout below describes the upstream
+> Codex install this reference was written for; substitute your own path.
+
 This file is for the fallback CLI mode only. Read it when the user explicitly asks to use `scripts/image_gen.py` / CLI / API / model controls, or after the user explicitly confirms that a transparent-output request should use the `gpt-image-1.5` true-transparency fallback path.
 
 `generate-batch` is a CLI subcommand in this fallback path. It is not a top-level mode of the skill.

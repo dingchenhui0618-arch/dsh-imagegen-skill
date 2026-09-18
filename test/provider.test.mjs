@@ -118,6 +118,17 @@ test("every resource SKILL.md points at is shipped", () => {
   }
 });
 
+test("the CLI reference tells readers where image_gen.py actually lives", () => {
+  // Upstream assumes the Codex layout; without the note an installed user is
+  // pointed at a path that does not exist in this package.
+  const cli = readFileSync(join(SKILL_DIR, "references", "cli.md"), "utf8");
+  assert.match(cli, /dsh-imagegen-skill/);
+  assert.ok(
+    cli.indexOf("dsh-imagegen-skill") < cli.indexOf("CODEX_HOME"),
+    "the note must precede the upstream CODEX_HOME instructions",
+  );
+});
+
 test("package.json wires the bundle patch the dsh profile needs", () => {
   const pkg = JSON.parse(readFileSync(join(PACKAGE_ROOT, "package.json"), "utf8"));
   assert.equal(pkg.dsh.bundle.patch, "./cordis.patch.yml");

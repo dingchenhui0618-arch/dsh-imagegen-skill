@@ -7,11 +7,10 @@ system skill, licensed under the Apache License, Version 2.0.
 Provenance
 ----------
 
-The following files are redistributed unmodified from that skill:
+The following files are redistributed from that skill:
 
   skills/imagegen/scripts/image_gen.py
   skills/imagegen/scripts/remove_chroma_key.py
-  skills/imagegen/references/cli.md
   skills/imagegen/references/codex-network.md
   skills/imagegen/references/image-api.md
   skills/imagegen/references/prompting.md
@@ -19,6 +18,16 @@ The following files are redistributed unmodified from that skill:
   skills/imagegen/assets/imagegen-small.svg
   skills/imagegen/assets/imagegen.png
   LICENSE
+
+One upstream file carries a local amendment:
+
+  skills/imagegen/references/cli.md
+                             verbatim except for a four-line note at the top
+                             explaining where image_gen.py lives when the skill
+                             is installed from this package. The upstream text
+                             assumes the Codex layout
+                             ($CODEX_HOME/skills/.system/imagegen/), which does
+                             not exist here.
 
 The following files are this repository's own work:
 
