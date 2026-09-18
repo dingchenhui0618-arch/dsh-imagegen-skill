@@ -1,0 +1,40 @@
+dsh-imagegen-skill
+Copyright (c) 2026 the dsh-imagegen-skill authors
+
+This product includes software developed as part of the Codex "imagegen"
+system skill, licensed under the Apache License, Version 2.0.
+
+Provenance
+----------
+
+The following files are redistributed unmodified from that skill:
+
+  skills/imagegen/scripts/image_gen.py
+  skills/imagegen/scripts/remove_chroma_key.py
+  skills/imagegen/references/cli.md
+  skills/imagegen/references/codex-network.md
+  skills/imagegen/references/image-api.md
+  skills/imagegen/references/prompting.md
+  skills/imagegen/references/sample-prompts.md
+  skills/imagegen/assets/imagegen-small.svg
+  skills/imagegen/assets/imagegen.png
+  LICENSE
+
+The following files are this repository's own work:
+
+  skills/imagegen/SKILL.md   rewritten for DeepSeek Harness: the DSH mode
+                             section, endpoint configuration, and the
+                             troubleshooting notes replace the original body,
+                             which assumed a built-in image_gen tool.
+  src/index.js               Cordis skill provider that registers the bundled
+                             skill on ctx.skills.
+  cordis.patch.yml
+  package.json
+  README.md
+  test/
+
+No API keys, credentials, or machine-specific endpoints are included. The
+endpoint in SKILL.md and README.md is a placeholder.
+
+The upstream skill ships no separate copyright or NOTICE file; the Apache
+License, Version 2.0 text is retained verbatim as LICENSE.

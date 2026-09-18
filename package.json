@@ -1,0 +1,49 @@
+{
+  "name": "dsh-imagegen-skill",
+  "version": "0.1.0",
+  "description": "Bundled imagegen skill for DeepSeek Harness: generate or edit raster images (photos, illustrations, textures, sprites, mockups, transparent-background cutouts) from the agent, through any OpenAI-compatible GPT Image endpoint.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "imagegen",
+    "image-generation",
+    "gpt-image"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingchenhui0618-arch/dsh-imagegen-skill.git"
+  },
+  "homepage": "https://github.com/dingchenhui0618-arch/dsh-imagegen-skill",
+  "bugs": {
+    "url": "https://github.com/dingchenhui0618-arch/dsh-imagegen-skill/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
