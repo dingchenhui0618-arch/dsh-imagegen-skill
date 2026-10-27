@@ -1,6 +1,11 @@
 # dsh-imagegen-skill
 
+[![CI](https://github.com/dingchenhui0618-arch/dsh-imagegen-skill/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/dingchenhui0618-arch/dsh-imagegen-skill/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 Bundled **imagegen** skill for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): one `dsh plugin add` puts image generation and image editing in every session's skill catalog — no copying files into `$DSH_HOME/skills` by hand.
+
+> 用着还行的话，点个 ⭐ 就够了——插件市场的「搜插件」按 GitHub star 排序，star 是这个插件能被人翻到的唯一杠杆。
 
 ```sh
 dsh plugin --profile web add dsh-imagegen-skill

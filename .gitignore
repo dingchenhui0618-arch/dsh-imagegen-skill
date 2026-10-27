@@ -6,3 +6,8 @@ Thumbs.db
 __pycache__/
 *.pyc
 .venv/
+
+# 环境变量 / 凭据：不入仓（示例文件除外）。本包不含任何 key，CLI 只读 $OPENAI_API_KEY
+.env
+.env.*
+!.env.example
